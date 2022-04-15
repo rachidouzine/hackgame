@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loader.css">
+    <title>GENERATE GAME</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <header>
+    <h1>HACKGAME</h1>
+</header>
+
+    <div id="loader"></div>
+    
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+      <h2>مرحبا بكم في صفحة التحميل</h2>
+      <p class="texts">تطبيقك مكتمل يمكنك تحميله الان من زر في الاسفل شكرا لك لزيارة موقعي ارجو مشاركة هذا الموقع مع صديقك شكرا لك مرة اخرى</p>
+      
+      
+      <button id='hideshow' class="btndown">free download</button>
+      <div class="panel">
+        <br>
+        <iframe src="https://nobots.cc/493417e" class="content" style="border:0;display:none"></iframe>
+      </div>
+      
+     
+
+
+
+    </div>
+    
+    <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 9000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+
+    $(document).ready(function(){
+  $('#hideshow').on('click', function(event) {        
+     $('.content').toggle('show');
+  });
+});
+$(document).ready(function(){
+  $('#hideshow2').on('click', function(event) {        
+     $('.content2').toggle('show');
+  });
+});
+    </script>
+    
+    </body>
+</html>
